@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactform.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu"><i class="fas fa-bars"></i></div>
+        <div class="nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+    
+        </div>
+        <div class="wrapper">
+        
+            <div class="bg-intro-text">
+                <p class="bg-text">Let’s find a home that’s perfect for you</p>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-wrapper">
+                <div class="single-wrapper">
+                    <img src="Images/img-1.jpg" alt="">
+                    <p  class="sw-text">You will love this delightful 3-story Tudor
+                         with old-world charm
+                         and breathtaking views of Beaver Lake</p>
+                </div>
+                <div class="single-wrapper">
+                    <img src="Images/img-2.jpg" alt="">
+                    <p class="sw-text">You will love this delightful 3-story Tudor 
+                        with old-world charm and breathtaking views of Beaver Lake</p>
+                </div>
+
+                <div class="single-wrapper">
+                    <img src="Images/img-3.jpg" alt="">
+                    <p  class="sw-text">You will love this delightful 3-story Tudor 
+                        with old-world charm and breathtaking views of Beaver Lake</p>
+                </div>
+                <div class="single-wrapper">
+                    <img src="Images/img-4.jpg" alt="">
+                    <p class="sw-text">You will love this delightful 3-story Tudor
+                         with old-world charm and breathtaking views of Beaver Lake</p>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <h2 id="contact-head">Contact Us</h2>
+                <p id="af_msg"></p>
+                <form name="forms" action="/">
+                    <label for="name">Fullname</label>
+                    <input type="text" id="name" name="name" placeholder="Fullname..">
+                    <p id="name_error" class="error_msg"></p>
+                
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username..">
+                    <p id="username_error" class="error_msg"></p>
+                
+                    
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="User Email.." >
+                    <p id="email_error" class="error_msg"></p>
+
+                    
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number..">
+                    <p id="phone_error" class="error_msg"></p>
+                
+                
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value=""></option>
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." class="text-area"></textarea>
+                
+                    <input type="submit" value="Submit" id="send">
+                  </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="foot-nav">
+                <ul class="list">
+                    <li><h3>Products</h3></li>
+                    <li class="f-list">Door Steps</li>
+                    <li class="f-list">Builder Solutions</li>
+                </ul>
+                <ul class="list">
+                    <li><h3>News</h3></li>
+                    <li class="f-list">News York Post</li>
+                    <li class="f-list">Wall Street Journal</li>
+                </ul>
+                <ul class="list">
+                    <li><h3>About US</h3></li>
+                    <li class="f-list">History</li>
+                    <li class="f-list">Management Team</li>
+                </ul>
+            </div>
+            <div class="foot-btm">
+                <ul class="list aux-flex">
+                    <li>&copy 2021</li>
+                    <li>Site Map</li>
+                </ul>
+                <ul class="list sm-flex">
+                    <li><a><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a><i class="fab fa-instagram-square"></i></a></li>
+                  </ul>
+            </div>
+        </div>
+
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
