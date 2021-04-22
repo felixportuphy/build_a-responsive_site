@@ -60,6 +60,7 @@ function validateForm() {
                error();
                return false;
             }else  if(phone[0] != 0){
+               error_message =document.getElementById("phone_error");
                error_message.innerText = "Please enter phone number starting with 0";
                error();
                return false;
