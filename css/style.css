@@ -8,11 +8,11 @@
    margin:0 auto;
     width:100vw;
     height:100vh;
-    overflow-x:hidden;add
+    overflow-x:hidden;
 }
 
 body{
-    /* overflow-x:hidden; */
+ font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav{
@@ -61,7 +61,7 @@ ul li a{
 
 
 .nav li:hover {
-  border-bottom:2px solid black;
+  border-bottom:1px solid black;
 }
 
 .wrapper{
@@ -158,12 +158,12 @@ input[type=submit] {
 
 .foot-btm .list li{
   
- font-size:1.1rem;
+ font-size:1rem;
 
 } 
 
 .f-list{
-    font-size:1.1rem;
+    font-size:1rem;
 }
 
 
@@ -248,22 +248,12 @@ input[type=submit] {
     
 }
 
-/* 
-    
-.wrapper-image{
-    position:absolute;
-    top:5rem;
-    left:70%;
-    width:22rem;
-    
- } */
 
- 
 .bg-intro-text{
     background-color:transparent;
     border:2px solid black;
     border-radius:8px;
-    position:absolute;
+    position:relative;
     top:20%;
     left:60%;
     padding:4rem;
@@ -315,5 +305,17 @@ input[type=submit] {
         left:6%; 
        
       }
+
+     
+.foot-btm .list li{
+  
+    font-size:1.1rem;
+   
+   }  
+
+   
+   .f-list{
+       font-size:1.2rem;
+   }
    
 }
