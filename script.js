@@ -16,8 +16,11 @@ function validateForm() {
    country = document.getElementById("country").value;
    subject = document.getElementById("subject").value;
    allFields_alert = document.querySelector("#af_msg");
+
+
    
       function error(){
+         
          let show = ()=>{
             error_message.style.display = "block"
          }
@@ -64,8 +67,11 @@ function validateForm() {
                error_message.innerText = "Please enter phone number starting with 0";
                error();
                return false;
-            }else if( country === "-1" ) {
-               alert( "Please provide your country!" );
+            }else if( country === "Select" ) {
+              
+               error_message =document.getElementById("country_error");
+               error_message.innerText ="Please provide your country!";
+               error();
                return false;
             }
 
@@ -93,5 +99,5 @@ function validateForm() {
    });
 
      $(".menu").on("click",function(){
-         $(".nav").toggle();
+         $(".nav").slideToggle("fast");
       })
