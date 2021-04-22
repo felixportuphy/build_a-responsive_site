@@ -6,6 +6,7 @@
    var country;
    var subject;
    var allFields_alert;
+   var error_message;
 function validateForm() {
    
    fname = document.getElementById("name").value;
@@ -15,50 +16,54 @@ function validateForm() {
    country = document.getElementById("country").value;
    subject = document.getElementById("subject").value;
    allFields_alert = document.querySelector("#af_msg");
-    
+   
+      function error(){
+         let show = ()=>{
+            error_message.style.display = "block"
+         }
+          show();
+         let hide = ()=>{
+            error_message.style.display = "none"
+         }
+            setTimeout(hide,3000);
+      }
     
       if(fname ==="" && user_name==="" && email==="" && phone===""){
-         allFields_alert.innerText ="All fields must be filled";
-         let show = ()=>{
-            allFields_alert.style.display = "block"
-         }
-        show();
-         let hide = ()=>{
-            allFields_alert.style.display = "none"
-         }
-            setTimeout(hide,2000);
+         error_message = document.getElementById("af_msg");
+         error_message.innerText ="All fields must be filled";
+         error();
            
        return false;
       }
       else{
             if( fname === "" ) {      
-               var error_message = document.getElementById("name_error");
+               error_message = document.getElementById("name_error");
                error_message.innerText = "Please Enter a Valid Name";
-               error_message.style.display = "block";
+              
+               error();
                return false;
             }else if( user_name === "" ) {
                
-               var error_message =document.getElementById("username_error");
+               error_message =document.getElementById("username_error");
                error_message.innerText = "Please Enter a Valid UserName";
-               error_message.style.display = "block";
+               error();
                return false;
             }else if( email === "" || email.indexOf("@") === -1|| email.length < 10 ) {
             
-               var error_message =document.getElementById("email_error");
+               error_message =document.getElementById("email_error");
                error_message.innerText = "Please Enter a Valid Email address";
-               error_message.style.display = "block";
+               error();
                return false;
             }else if(phone == "" || isNaN( phone ) || phone.length != 10  ) {
-               var error_message =document.getElementById("phone_error");
+               error_message =document.getElementById("phone_error");
                error_message.innerText = "Please Enter a Valid Phone Number";
-               error_message.style.display = "block";
+               error();
                return false;
             }else  if(phone[0] != 0){
                error_message.innerText = "Please enter phone number starting with 0";
-               error_message.style.display = "block";
-               console.log("check zero")
+               error();
                return false;
-            }else if( country == "-1" ) {
+            }else if( country === "-1" ) {
                alert( "Please provide your country!" );
                return false;
             }
