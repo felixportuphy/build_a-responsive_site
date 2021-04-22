@@ -15,6 +15,9 @@ input[type=text], select, textarea {
     color: white;
     padding: 12px 20px;
     border: none;
+    width:8rem;
+    /* position:relative;
+    left:30%; */
     border-radius: 4px;
     cursor: pointer;
   }
@@ -45,10 +48,10 @@ input[type=text], select, textarea {
 
   .error_msg,#af_msg{
     display:none;
-    padding:2px;
+    padding:4px;
     margin:0 0 10px 0;
-    background-color:rgb(243, 35, 35);
-    border-radius:3px;
-    color:white;
-    transition:0.3s;
+    color:rgb(243, 35, 35);
+    border-radius:5px;
+   
+    transition:0.8s;
   }
