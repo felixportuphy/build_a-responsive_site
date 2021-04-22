@@ -41,25 +41,25 @@ function validateForm() {
       else{
             if( fname === "" ) {      
                error_message = document.getElementById("name_error");
-               error_message.innerText = "Please Enter a Valid Name";
+               error_message.innerText = "Please enter a valid Name";
               
                error();
                return false;
             }else if( user_name === "" ) {
                
                error_message =document.getElementById("username_error");
-               error_message.innerText = "Please Enter a Valid UserName";
+               error_message.innerText = "Please enter a valid username";
                error();
                return false;
             }else if( email === "" || email.indexOf("@") === -1|| email.length < 10 ) {
             
                error_message =document.getElementById("email_error");
-               error_message.innerText = "Please Enter a Valid Email address";
+               error_message.innerText = "Please enter a valid email address";
                error();
                return false;
             }else if(phone == "" || isNaN( phone ) || phone.length != 10  ) {
                error_message =document.getElementById("phone_error");
-               error_message.innerText = "Please Enter a Valid Phone Number";
+               error_message.innerText = "Please enter a valid phone number";
                error();
                return false;
             }else  if(phone[0] != 0){
