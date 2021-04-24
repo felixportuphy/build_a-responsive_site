@@ -12,7 +12,7 @@
 }
 
 body{
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Poppins',Arial, Helvetica, sans-serif;
 }
 
 .nav{
@@ -76,7 +76,7 @@ ul li a{
 
 .bg-intro-text{
  
-    border:2px solid rgb(234, 238, 22);
+    border:1px solid #FBBC05;
     position:relative;
     top:20%;
     left:4rem;
@@ -90,7 +90,7 @@ ul li a{
 
 .bg-text{
     color:white;
-    font-size:1.4rem;
+    font-size:1.5rem;
     font-weight:bold;
 }
 
@@ -121,9 +121,16 @@ ul li a{
 
 .sw-text{
     color:black;
+    opacity:0.65;
     font-size:1.2rem;
     text-align: center;
     padding:1rem;
+}
+
+
+.price{
+    color:#FBBC05;
+    font-size:1.2rem;
 }
 
  
@@ -250,9 +257,11 @@ input[type=submit] {
 
 
 .bg-intro-text{
-    background-color:transparent;
-    border:2px solid black;
-    border-radius:8px;
+    background-color:white;
+    box-shadow:  2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),;
+    border-radius:5px;
+    border:none;
     position:relative;
     top:20%;
     left:60%;
@@ -263,8 +272,8 @@ input[type=submit] {
 
 
 .bg-text{
-    color:black;
-    font-size:1.5rem;
+    color:#FBBC05;
+    font-size:1.7rem;
     font-weight:bold;
     
 }
@@ -291,7 +300,6 @@ input[type=submit] {
     width:23rem;
     
 }
-
 
 
 
